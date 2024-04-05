@@ -13,7 +13,7 @@ import {NgIf} from "@angular/common";
   templateUrl: './user-details.component.html',
   styleUrl: './user-details.component.css'
 })
-export class UserDetailsComponent implements OnInit{
+export class UserDetailsComponent implements OnInit {
   user: IUser
 
   constructor(
@@ -25,6 +25,6 @@ export class UserDetailsComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    this.activatedRoute.data.subscribe(({userData})=> this.user=userData)
-    }
+    this.activatedRoute.data.subscribe(({userData}) => this.user = userData)
+  }
 }
